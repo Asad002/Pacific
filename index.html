@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/seo-tabs.css">
+  <link rel="stylesheet" href="css/dtsel.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/uicons-regular-rounded.css">
+  <link rel="stylesheet" href="css/swiper.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Pacific-Challenge</title>
+</head>
+<body>
+  <div class="site-header" id="my-header">
+    <div class="container d-flex">
+      <div class="col-20">
+        <div class="site-logo">
+          <a href="index.html" class="home-link p-b">Pacific <span class="home-span p-sm">TRAVEL AGENCY</span></a>
+        </div>
+      </div>
+      <div class="col-80">
+        <span class="menu-trigger p-r">MENU</span>
+        <div class="site-menu-container transition">
+          <ul class="site-menu d-flex just-end item-center">
+            <li class="menu-item current"><a href="index.html">home</a></li>
+            <li class="menu-item"><a href="index.html">about</a></li>
+            <li class="menu-item"><a href="index.html">destination</a></li>
+            <li class="menu-item"><a href="index.html">hotel</a></li>
+            <li class="menu-item"><a href="index.html">blog</a></li>
+            <li class="menu-item"><a href="index.html">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="hero d-flex item-center">
+    <div class="container d-flex item-center">
+      <div class="col-60">
+        <span class="hero-span ari">Welcome to Pacific</span>
+        <h1 class="hero-title p-b">Discover Your Favorite Place with Us</h1>
+        <p class="hero-sub-title">Travel to the any corner of the world, without going around in circles</p>
+      </div>
+      <div class="col-40">
+        <div class="d-flex just-end item-center">
+          <a href="#" onclick="toggle();">
+            <div class="video-btn-container d-flex just-center item-center">
+              <i class="fa fa-play" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+        <div class="trailer">
+          <video src="img/Introducing Stanley.mp4" controls="true"></video>
+          <img class="cancle" src="img/icon img/cancel.png" alt="" onclick="toggle();">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="js-tab">
+    <div class="container">
+      <div data-seo-tabs="true" data-hashable="true">
+        <a class="tab-title" href="#one" data-tabtop="true" data-active="true">Search Tour</a>
+        <a class="tab-title" href="#two" data-tabtop="true">Hotel</a>
+        <div class="tab" id="one" data-tabbox="true" data-active="true">
+          <div class="d-flex">
+            <div class="col-20">
+              <p class="input-title p-b">Destination</p>
+              <i class="fa fa-search"></i>
+              <input type="text" placeholder="Search Place">
+            </div>
+            <div class="col-20 border-right">
+              <p class="input-title p-b">Check-In Date</p>
+              <i class="fa fa-calendar"></i> <input class="check-in" name="dateTimePicker" placeholder="Check In Date"/>
+            </div>
+            <div class="col-20 border-right">
+              <p class="input-title p-b">Check-Out Date</p>
+              <i class="fa fa-calendar"></i> <input class="check-in" name="dateTimePicker2" placeholder="Check Out Date"/>
+            </div>
+            <div class="col-20 border-right">
+              <p class="input-title p-b">Price Limit</p>
+              <select class="amount" name="" id="">
+                <option value="">$100</option>
+                <option value="">$200</option>
+                <option value="">$300</option>
+                <option value="">$400</option>
+                <option value="">$500</option>
+                <option value="">$1000</option>
+              </select>
+            </div>
+            <div class="col-20 border-right d-flex just-center item-center search-box">
+              <p class="search-btn p-b">search</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab" id="two" data-tabbox="true">
+          <div class="d-flex">
+            <div class="col-20">
+              <p class="input-title p-b">Destination</p>
+              <i class="fa fa-search"></i>
+              <input type="text" placeholder="Search Place">
+            </div>
+            <div class="col-20 border-right">
+              <p class="input-title p-b">Check-In Date</p>
+              <i class="fa fa-calendar"></i> <input class="check-in" name="dateTimePicker3" placeholder="Check In Date"/>
+            </div>
+            <div class="col-20 border-right">
+              <p class="input-title p-b">Check-Out Date</p>
+              <i class="fa fa-calendar"></i> <input class="check-in" name="dateTimePicker4" placeholder="Check Out Date"/>
+            </div>
+            <div class="col-20 border-right">
+              <p class="input-title p-b">Price Limit</p>
+              <select class="amount" name="" id="">
+                <option value="">$100</option>
+                <option value="">$200</option>
+                <option value="">$300</option>
+                <option value="">$400</option>
+                <option value="">$500</option>
+                <option value="">$1000</option>
+              </select>
+            </div>
+            <div class="col-20 border-right d-flex just-center item-center search-box">
+              <p class="search-btn p-b">search</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="adventure">
+    <div class="container d-flex">
+      <div class="col-50 d-flex">
+        <div class="col-1-2">
+          <div class="adventure-container first">
+              <div class="icon-container">
+                <img class="adventure-img" src="img/icon img/paragliding.png" alt="">
+              </div>
+              <div class="adventure-content">
+                <h3 class="adventure-title p-r">Activities</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-1-2">
+          <div class="adventure-container second">
+            <div class="icon-container">
+              <img class="adventure-img" src="img/icon img/placeholder (1).png" alt="">
+            </div>
+            <div class="adventure-content">
+              <h3 class="adventure-title p-r">Activities</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+            </div>
+        </div>
+        </div>
+        <div class="col-1-2">
+          <div class="adventure-container third">
+            <div class="icon-container">
+              <img class="adventure-img" src="img/icon img/tour-guide.png" alt="">
+            </div>
+            <div class="adventure-content">
+              <h3 class="adventure-title p-r">Activities</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+            </div>
+        </div>
+        </div>
+        <div class="col-1-2">
+          <div class="adventure-container four">
+            <div class="icon-container">
+              <img class="adventure-img" src="img/icon img/map.png" alt="">
+            </div>
+            <div class="adventure-content">
+              <h3 class="adventure-title p-r">Activities</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-50">
+        <div class="memorable-container">
+          <span class="hero-span ari">Welcome to Pacific</span>
+          <h2 class="section-title p-sm">It's time to start your adventure</h2>
+          <p class="memorable-content">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          <a href="#" class="primary-btn">book your destination</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="destination">
+      <span class="hero-span ari text-center">Pacific Provide Places</span>
+      <h2 class="section-title text-center p-sm">Select Your Destination</h2>
+      <div class="swiper-container first-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide position-relative">
+            <img class="destination-img" src="img/place-1.jpg" alt="">
+            <h3 class="destination-title">Philippines</h3>
+          </div>
+          <div class="swiper-slide position-relative">
+            <img class="destination-img" src="img/place-2.jpg" alt="">
+            <h3 class="destination-title">Canada</h3>
+          </div>
+          <div class="swiper-slide position-relative">
+            <img class="destination-img" src="img/place-3.jpg" alt="">
+            <h3 class="destination-title">Australia</h3>
+          </div>
+          <div class="swiper-slide position-relative">
+            <img class="destination-img" src="img/place-4.jpg" alt="">
+            <h3 class="destination-title">Greece</h3>
+          </div>
+          <div class="swiper-slide position-relative">
+            <img class="destination-img" src="img/place-5.jpg" alt="">
+            <h3 class="destination-title">Thailand</h3>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+  </div>
+  <section class="tour-destination">
+    <div class="container">
+      <span class="hero-span ari text-center">Destination</span>
+      <h2 class="section-title text-center p-sm">Tour Destination</h2>
+      <div class="d-flex">
+        <div class="col-1-3">
+          <div class="single-tour-destination position-relative">
+            <h3 class="tour-cost">somthing</h3>
+            <a href="#"><img src="img/destination-1.jpg" alt="" class="destination-img"></a>
+            <div class="tour-guide">
+              <a href="#"><h4 class="duration p-b">8 days tour</h4></a>
+              <p class="tour-name p-m">Banaue Rice Terraces</p>
+              <p class="tour-address p-r"><i class="fa fa-map-marker"></i> Banaue, Ifugao, Philippines</p>
+              <ul class="facilities d-flex">
+                <li><img class="facility-img" src="img/icon img/hot-tub.png"> 2</li>
+                <li><img class="facility-img" src="img/icon img/bed.png"> 3</li>
+                <li><img class="facility-img" src="img/icon img//mountains.png"> Near Mountains</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-3">
+          <div class="single-tour-destination position-relative">
+            <h3 class="tour-cost">somthing</h3>
+            <a href="#"><img src="img/destination-2.jpg" alt="" class="destination-img"></a>
+            <div class="tour-guide">
+              <a href="#"><h4 class="duration p-b">8 days tour</h4></a>
+              <p class="tour-name p-m">Banaue Rice Terraces</p>
+              <p class="tour-address p-r"><i class="fa fa-map-marker"></i> Banaue, Ifugao, Philippines</p>
+              <ul class="facilities d-flex">
+                <li><img class="facility-img" src="img/icon img/hot-tub.png"> 2</li>
+                <li><img class="facility-img" src="img/icon img/bed.png"> 3</li>
+                <li><img class="facility-img" src="img/icon img//mountains.png"> Near Mountains</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-3">
+          <div class="single-tour-destination position-relative">
+            <h3 class="tour-cost">somthing</h3>
+            <a href="#"><img src="img/destination-3.jpg" alt="" class="destination-img"></a>
+            <div class="tour-guide">
+              <a href="#"><h4 class="duration p-b">8 days tour</h4></a>
+              <p class="tour-name p-m">Banaue Rice Terraces</p>
+              <p class="tour-address p-r"><i class="fa fa-map-marker"></i> Banaue, Ifugao, Philippines</p>
+              <ul class="facilities d-flex">
+                <li><img class="facility-img" src="img/icon img/hot-tub.png"> 2</li>
+                <li><img class="facility-img" src="img/icon img/bed.png"> 3</li>
+                <li><img class="facility-img" src="img/icon img/beach.png"> Near beach</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-3">
+          <div class="single-tour-destination position-relative">
+            <h3 class="tour-cost">somthing</h3>
+            <a href="#"><img src="img/destination-4.jpg" alt="" class="destination-img"></a>
+            <div class="tour-guide">
+              <a href="#"><h4 class="duration p-b">8 days tour</h4></a>
+              <p class="tour-name p-m">Banaue Rice Terraces</p>
+              <p class="tour-address p-r"><i class="fa fa-map-marker"></i> Banaue, Ifugao, Philippines</p>
+              <ul class="facilities d-flex">
+                <li><img class="facility-img" src="img/icon img/hot-tub.png"> 2</li>
+                <li><img class="facility-img" src="img/icon img/bed.png"> 3</li>
+                <li><img class="facility-img" src="img/icon img//mountains.png"> Near Mountains</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-3">
+          <div class="single-tour-destination position-relative">
+            <h3 class="tour-cost">somthing</h3>
+            <a href="#"><img src="img/destination-5.jpg" alt="" class="destination-img"></a>
+            <div class="tour-guide">
+              <a href="#"><h4 class="duration p-b">8 days tour</h4></a>
+              <p class="tour-name p-m">Banaue Rice Terraces</p>
+              <p class="tour-address p-r"><i class="fa fa-map-marker"></i> Banaue, Ifugao, Philippines</p>
+              <ul class="facilities d-flex">
+                <li><img class="facility-img" src="img/icon img/hot-tub.png"> 2</li>
+                <li><img class="facility-img" src="img/icon img/bed.png"> 3</li>
+                <li><img class="facility-img" src="img/icon img//mountains.png"> Near Mountains</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-3">
+          <div class="single-tour-destination position-relative">
+            <h3 class="tour-cost">somthing</h3>
+            <a href="#"><img src="img/destination-6.jpg" alt="" class="destination-img"></a>
+            <div class="tour-guide">
+              <a href="#"><h4 class="duration p-b">8 days tour</h4></a>
+              <p class="tour-name p-m">Banaue Rice Terraces</p>
+              <p class="tour-address p-r"><i class="fa fa-map-marker"></i> Banaue, Ifugao, Philippines</p>
+              <ul class="facilities d-flex">
+                <li><img class="facility-img" src="img/icon img/hot-tub.png"> 2</li>
+                <li><img class="facility-img" src="img/icon img/bed.png"> 3</li>
+                <li><img class="facility-img" src="img/icon img//mountains.png"> Near Mountains</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="video-btn-section d-flex just-center item-center">
+    <div class="">
+      <a href="#" onclick="toggle();">
+        <div class="video-btn-container d-flex just-center item-center">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </div>
+      </a>
+    </div>
+    <div class="trailer">
+      <video src="img/Introducing Stanley.mp4" controls="true"></video>
+      <img class="cancle" src="img/icon img/cancel.png" alt="" onclick="toggle();">
+    </div>
+  </section>
+  <section class="memorable">
+    <div class="container">
+      <div class="d-flex">
+        <div class="col-50">
+          <div class="img-container">
+            <div class="img-out">
+              <img src="img/about-1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-50">
+          <div class="memorable-container">
+            <span class="hero-span ari">About Us</span>
+            <h2 class="section-title p-sm">Make Your Tour Memorable and Safe With Us</h2>
+            <div class="memorable-content">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</div>
+            <a href="#" class="primary-btn">book your destination</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Feed Back -->
+<section class="feed-back">
+  <div class="container">
+    <span class="hero-span ari text-center">Testimonail</span>
+    <h2 class="section-title p-sm text-center">Tourist Feedback</h2>
+    <div class="swiper-container second-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide feed-back-slide">
+          <img class="rating" src="img/icon img/rating.png" alt="">
+          <p class="memorable-content">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <div class="d-flex item-center">
+            <img class="user-img" src="img/person_1.jpg" alt="">
+            <div class="person">
+              <p class="name p-m">Roger Scott</p>
+              <p class="position">Marketing Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide feed-back-slide">
+          <img class="rating" src="img/icon img/rating.png" alt="">
+          <p class="memorable-content">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <div class="d-flex item-center">
+            <img class="user-img" src="img/person_2.jpg" alt="">
+            <div class="person">
+              <p class="name p-m">Roger Scott</p>
+              <p class="position">Marketing Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide feed-back-slide">
+          <img class="rating" src="img/icon img/rating.png" alt="">
+          <p class="memorable-content">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <div class="d-flex item-center">
+            <img class="user-img" src="img/person_3.jpg" alt="">
+            <div class="person">
+              <p class="name p-m">Roger Scott</p>
+              <p class="position">Marketing Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide feed-back-slide">
+          <img class="rating" src="img/icon img/rating.png" alt="">
+          <p class="memorable-content">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <div class="d-flex item-center">
+            <img class="user-img" src="img/person_1.jpg" alt="">
+            <div class="person">
+              <p class="name p-m">Roger Scott</p>
+              <p class="position">Marketing Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide feed-back-slide">
+          <img class="rating" src="img/icon img/rating.png" alt="">
+          <p class="memorable-content">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <div class="d-flex item-center">
+            <img class="user-img" src="img/person_2.jpg" alt="">
+            <div class="person">
+              <p class="name p-m">Roger Scott</p>
+              <p class="position">Marketing Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide feed-back-slide">
+          <img class="rating" src="img/icon img/rating.png" alt="">
+          <p class="memorable-content">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <div class="d-flex item-center">
+            <img class="user-img" src="img/person_3.jpg" alt="">
+            <div class="person">
+              <p class="name p-m">Roger Scott</p>
+              <p class="position">Marketing Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide feed-back-slide">
+          <img class="rating" src="img/icon img/rating.png" alt="">
+          <p class="memorable-content">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <div class="d-flex item-center">
+            <img class="user-img" src="img/person_1.jpg" alt="">
+            <div class="person">
+              <p class="name p-m">Roger Scott</p>
+              <p class="position">Marketing Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+<section class="blog">
+  <div class="container">
+    <span class="hero-span ari text-center">Our Blog</span>
+    <h2 class="section-title p-sm text-center">Recent Post</h2>
+    <div class="d-flex just-center">
+      <div class="col-1-3">
+        <div class="single-tour-destination position-relative">
+          <div class="tour-cost d-flex item-center">
+            <p class="one p-l">11</p>
+            <p class="two"><span class="yr">2020</span><span class="mon">September</span></p>
+          </div>
+          <a href="#"><img src="img/image_1.jpg" alt="" class="destination-img"></a>
+          <div class="tour-guide">
+            <a class="post-title p-sm"><p>Most Popular Place In This World</p></a>
+            <a href="#" class="primary-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-1-3">
+        <div class="single-tour-destination position-relative">
+          <div class="tour-cost d-flex item-center">
+            <p class="one p-l">11</p>
+            <p class="two"><span class="yr">2020</span><span class="mon">September</span></p>
+          </div>
+          <a href="#"><img src="img/image_2.jpg" alt="" class="destination-img"></a>
+          <div class="tour-guide">
+            <a class="post-title p-sm"><p>Most Popular Place In This World</p></a>
+            <a href="#" class="primary-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-1-3">
+        <div class="single-tour-destination position-relative">
+          <div class="tour-cost d-flex item-center">
+            <p class="one p-l">11</p>
+            <p class="two"><span class="yr">2020</span><span class="mon">September</span></p>
+          </div>
+          <a href="#"><img src="img/image_3.jpg" alt="" class="destination-img"></a>
+          <div class="tour-guide">
+            <a class="post-title p-sm"><p>Most Popular Place In This World</p></a>
+            <a href="#" class="primary-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ask-for-quote">
+  <div class="container d-flex just-center item-center">
+    <div class="quote-content">
+      <h2 class="ask-for-quote-title p-b text-center">We Are Pacific A Travel Agency</h2>
+      <p class="text-center">We can manage your dream building A small river named Duden flows by their place</p>
+      <a href="#" class="quote-btn">Ask For A Quote</a>
+    </div>
+  </div>
+</section>
+<section class="site-footer">
+  <div class="container">
+    <div class="d-flex">
+      <div class="col-1-4">
+        <h2 class="footer-column-heading p-sm">About</h2>
+        <p class="footer-column-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <ul class="footer-social-menu">
+          <li><a href="#">
+            <i class="fa fa-twitter"></i>
+          </a></li>
+          <li><a href="#">
+            <i class="fa fa-facebook"></i>
+          </a></li>
+          <li><a href="#">
+            <i class="fa fa-instagram"></i>
+          </a></li>
+        </ul>
+      </div>
+      <div class="col-1-4">
+        <h2 class="footer-column-heading p-sm">Information</h2>
+        <ul class="footer-list">
+          <li><a href="#">Only Enquiry</a></li>
+          <li><a href="#">General Enquiries</a></li>
+          <li><a href="#">Booking Conditions</a></li>
+          <li><a href="#">Privacy and Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Call Us</a></li>
+        </ul>
+      </div>
+      <div class="col-1-4">
+        <h2 class="footer-column-heading p-sm">Experience</h2>
+        <ul class="footer-list">
+          <li><a href="#">Adventure</a></li>
+          <li><a href="#">Hotel and Resturant</a></li>
+          <li><a href="#">Beach</a></li>
+          <li><a href="#">Nature</a></li>
+          <li><a href="#">Campaign</a></li>
+          <li><a href="#">Party</a></li>
+        </ul>
+      </div>
+      <div class="col-1-4">
+        <h2 class="footer-column-heading p-sm">Have a Question?</h2>
+        <ul class="footer-list">
+          <li>
+            <div class="f-i-c">
+              <img src="img/icon img/pin.png" alt="">
+            </div>
+            <span class="address">203 Fake St. Mountain View, San Francisco, California, USA </span>
+          </li>
+          <li>
+            <div class="f-i-c">
+              <img src="img/icon img/phone-call.png" alt="">
+            </div>
+            <a href="#" class="phone">+2 392 3929 210</a>
+          </li>
+          <li>
+            <div class="f-i-c">
+              <img src="img/icon img/send.png" alt="">
+            </div>
+            <a href="#" class="email">info@yourdomain.com </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy-right">
+      <p>Copyright ©2021 All rights reserved | This template is made with <i class="fa fa-heart"></i> by Colorlib</p>
+    </div>
+  </div>
+</section>
+  <!-- Scripts -->
+  <script src="plugin/seo-tabs.min.js"></script>
+  <script src="plugin/dtsel.js"></script>
+  <script src="plugin/swiper.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
