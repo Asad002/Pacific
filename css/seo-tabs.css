@@ -1,0 +1,45 @@
+/*!
+ * seo-tabs.css - v@version@
+ * Lightweight SEO friendly tab control written in pure JavaScript
+ * https://github.com/john-doherty/seo-tabs
+ * @author John Doherty <www.johndoherty.info>
+ * @license MIT
+ */
+[data-seo-tabs="true"] {
+  margin: -100px 0 0 0 !important;
+  z-index: 2;
+  position: relative;
+}
+
+[data-seo-tabs="true"] [data-tabtop="true"] {
+  margin-right: 5px;
+  display: inline-block;
+  border-bottom: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  background: #f15d30;
+  color: #fff;
+}
+
+[data-seo-tabs="true"] [data-tabtop="true"][data-active="true"] {
+  background: #fff;
+  color: gray;
+}
+
+[data-seo-tabs="true"] [data-tabbox="true"] {
+  display: none;
+  white-space: normal;
+  overflow: auto;
+  clear: both;
+  margin: 0;
+  background: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+[data-seo-tabs="true"] [data-tabbox="true"][data-active="true"] {
+  display: block;
+}
